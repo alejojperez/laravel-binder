@@ -1,0 +1,29 @@
+<?php
+
+namespace NAMESPACE;
+
+use Illuminate\Support\ServiceProvider;
+
+class BinderServiceProvider extends ServiceProvider
+{
+
+    /**
+     * Bootstrap the application services.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        //
+    }
+
+    /**
+     * Register the application services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        $binderManager = $this->app->make('AlejoJPerez\LaravelBinder\BinderManager')->register($this->app);
+    }
+}

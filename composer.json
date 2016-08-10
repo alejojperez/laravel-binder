@@ -1,0 +1,23 @@
+{
+    "name": "xthrone/laravel-binder",
+    "description": "Simple package to add bindings to the laravel IoC Container.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alejandro Perez",
+            "email": "alejandro.perez.developer@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/contracts": "^5.2",
+        "illuminate/support": "^5.2",
+        "illuminate/console": "^5.2",
+        "illuminate/filesystem": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "AlejoJPerez\\LaravelBinder\\": "src/"
+        }
+    }
+}

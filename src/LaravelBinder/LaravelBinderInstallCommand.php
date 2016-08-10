@@ -3,8 +3,9 @@
 namespace AlejoJPerez\LaravelBinder;
 
 use Illuminate\Console\Command;
+use Illuminate\Contracts\Filesystem\Filesystem;
 
-class AlejoJPErezLaravelBinderInstallCommand extends Command
+class LaravelBinderInstallCommand extends Command
 {
     /**
      * @var \Illuminate\Filesystem\Filesystem|Filesystem
@@ -14,7 +15,7 @@ class AlejoJPErezLaravelBinderInstallCommand extends Command
     /**
      * Create a new controller creator command instance.
      *
-     * @param \Illuminate\Filesystem\Filesystem|Filesystem $files
+     * @param Filesystem $files
      */
     public function __construct(Filesystem $files)
     {
@@ -28,7 +29,7 @@ class AlejoJPErezLaravelBinderInstallCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'alejojperez-laravel-binder:install {--location?}';
+    protected $signature = 'alejojperez-binder:install {--location?}';
 
     /**
      * The console command description.

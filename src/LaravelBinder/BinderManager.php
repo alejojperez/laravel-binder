@@ -12,7 +12,7 @@ class BinderManager
      */
     public function register(Application $app)
     {
-        $binders = config('alejojperez-laravel-binder.binders');
+        $binders = config('alejojperez-binder.binders');
 
         foreach ($binders as $binder)
         {

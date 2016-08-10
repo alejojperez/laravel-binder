@@ -1,7 +1,13 @@
 {
-    "name": "xthrone/laravel-binder",
+    "name": "alejojperez/laravel-binder",
     "description": "Simple package to add bindings to the laravel IoC Container.",
-    "license": "MIT",
+    "keywords": ["laravel", "binder", "command", "ioc", "container"],
+    "license": "APACHE LICENSE, VERSION 2.0",
+    "type": "package",
+    "support": {
+        "issues": "https://github.com/alejojperez/laravel-binder/issues",
+        "source": "https://github.com/alejojperez/laravel-binder"
+    },
     "authors": [
         {
             "name": "Alejandro Perez",
@@ -19,5 +25,6 @@
         "psr-4": {
             "AlejoJPerez\\LaravelBinder\\": "src/"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }

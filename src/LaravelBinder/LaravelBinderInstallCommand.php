@@ -51,7 +51,7 @@ class LaravelBinderInstallCommand extends Command
 
         if($permission)
         {
-            $this->createBinder($location);
+            $this->createBinder($location."/BinderServiceProvider.php");
             $this->info('Remember to set the right namespace in the BinderServiceProvider');
         }
     }

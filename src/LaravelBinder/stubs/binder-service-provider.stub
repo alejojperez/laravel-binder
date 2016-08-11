@@ -24,6 +24,6 @@ class BinderServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make(AlejoJPerez\LaravelBinder\BinderManager::class)->register($this->app);
+        $this->app->make(\AlejoJPerez\LaravelBinder\BinderManager::class)->register($this->app);
     }
 }

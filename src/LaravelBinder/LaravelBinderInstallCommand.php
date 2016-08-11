@@ -29,7 +29,7 @@ class LaravelBinderInstallCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'alejojperez-binder:install {--location?}';
+    protected $signature = 'alejojperez-binder:install {location?}';
 
     /**
      * The console command description.
@@ -45,7 +45,7 @@ class LaravelBinderInstallCommand extends Command
      */
     public function handle()
     {
-        $location = $this->option('location') ? $this->option('location') : $this->laravel->basePath().'/app/Providers';
+        $location = $this->argument('location') ? $this->argument('location') : $this->laravel->basePath().'/app/Providers';
 
         $permission = $this->confirm('A new php class called BinderServiceProvider will be created in '.$location.'. Should we Proceed? [y/n]', 'n');
 

@@ -3,12 +3,12 @@
 namespace AlejoJPerez\LaravelBinder;
 
 use Illuminate\Console\Command;
-use Illuminate\Contracts\Filesystem\Filesystem;
+use Illuminate\Filesystem\Filesystem;
 
 class LaravelBinderInstallCommand extends Command
 {
     /**
-     * @var \Illuminate\Filesystem\Filesystem|Filesystem
+     * @var \Illuminate\Filesystem\Filesystem
      */
     protected $files;
 
